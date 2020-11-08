@@ -631,7 +631,9 @@ header {
     display: flex;
     z-index: 2;
     position: relative;
-    
+    img:active{
+      transform: scale(0.8, 0.8);
+    }
     
     button{
       width: 100px;
@@ -647,9 +649,6 @@ header {
       display: flex;
       button{
         z-index: 2;
-        img:active{
-          transform: scale(0.8, 0.8);
-        }
       }
     }
     &_Button-right {
@@ -662,9 +661,6 @@ header {
       display: flex;
       button{
         z-index: 2;
-        img:active{
-          transform: scale(0.8, 0.8);
-        }
       }
     }
     .sliderImg{
@@ -1689,7 +1685,7 @@ header {
       display: flex;
       flex-direction: column;
       padding: 20px 30px;
-      min-height: 200px;
+      min-height: 248px;
       h1{
         @include h1;
         line-height: normal;
@@ -2186,6 +2182,7 @@ header {
   .primaryScreenMin{
 
   &__content {
+    min-height: 200px;
     h1{
       font-size: 25px;
       span{

@@ -36,52 +36,6 @@ function showDivs(n, index, selector) {
   return index;
 }
 
-
-// var slideIndex3 = 1;
-// showDivs3(slideIndex3,slideIndex3,"reviews__container_item");
-
-// function plusDivs3(n) {
-//   showDivs3(slideIndex3 += n,slideIndex3,"reviews__container_item");
-// }
-
-// function currentDiv(n) {
-//   showDivs3(slideIndex3 = n);
-// }
-
-// function showDivs3(n, index, selector) {
-//   var i;
-//   var x = document.querySelectorAll(selector);
-//   var dots = document.getElementsByClassName("navItem");
-//   if (n > x.length) {
-//     index = 1
-//   }
-//   if (n < 1) {
-//     index = x.length
-//   }
-//   for (i = 0; i < x.length; i++) {
-//     x[i].style.display = "none";  
-//   }
-//   for (i = 0; i < dots.length; i++) {
-//     dots[i].className = dots[i].className.replace("active", "");
-//   }
-//   x[index-1].style.display = "block";  
-//   dots[index-1].className += "active";
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const body = document.querySelector("body");
 const burgerMenu = document.querySelector(".burger");
 const nav = document.querySelector("nav");
@@ -100,7 +54,3 @@ shadow.addEventListener("click", (event)=>{
     burgerMenu.classList.remove("close");
   }
 })
-
-
-
-
