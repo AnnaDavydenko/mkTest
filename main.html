@@ -5,6 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>main page</title>
+
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/static/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/static/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/static/favicon-16x16.png">
+  <link rel="manifest" href="./assets/static/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
   <link
     href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
     rel="stylesheet">
@@ -238,40 +246,6 @@
 
 
     <div class="advantages">
-      <!-- <div class="wrapper">
-        <div class="item">
-          <div class="itemImg">
-            <img src="/assets/icons/item1.png" alt="advantages-item">
-          </div>
-          <div class="itemText">
-            <p>Надежная защита</p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="itemImg">
-            <img src="/assets/icons/item2.png" alt="advantages-item">
-          </div>
-          <div class="itemText">
-            <p>Безупречная репутация</p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="itemImg">
-            <img src="/assets/icons/item3.png" alt="advantages-item">
-          </div>
-          <div class="itemText">
-            <p>Ориентированность на результат</p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="itemImg">
-            <img src="/assets/icons/item4.png" alt="advantages-item">
-          </div>
-          <div class="itemText">
-            <p>Абсолютная конфиденциальность</p>
-          </div>
-        </div>
-      </div> -->
     </div>
 
     <div class="introduction">
@@ -447,16 +421,16 @@
         <div class="reviews__buttonsContainer">
           <button class="allReviews">Все отзывы</button>
           <div class="navItemContainer">
-            <button class="navItem active"></button>
-            <button class="navItem"></button>
-            <button class="navItem"></button>
+            <button class="navItem active" onclick="currentDiv(1)"></button>
+            <button class="navItem"onclick="currentDiv(2)"></button>
+            <button class="navItem"onclick="currentDiv(3)"></button>
           </div>
 
           <div class="sliderButtons">
-            <button class="sliderButtons-left">
+            <button class="sliderButtons-left" onclick="plusDivs3(-1)">
               <img src="/assets/icons/leftVector.png" alt="left-button-icon">
             </button>
-            <button class="sliderButtons-right">
+            <button class="sliderButtons-right" onclick="plusDivs3(1)">
               <img src="/assets/icons/rightVector.png" alt="right-button-icon">
             </button>
           </div>
@@ -732,12 +706,12 @@
           </div>
           <button>
             <p>КАРТА САЙТА</p> 
-            <img src="/assets/icons/arrow.png" alt="arrow-image">
+            <img src="/assets/icons/arrow.svg" alt="arrow-image">
           </button>
           <button>
             <p>ПОЛИТИКА
               КОНФИДЕНЦИАЛЬНОСТИ</p> 
-            <img src="/assets/icons/arrow.png" alt="arrow-image">
+            <img src="/assets/icons/arrow.svg" alt="arrow-image">
           </button>
         </div>
         <div class="footer__center">
